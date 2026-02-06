@@ -1,0 +1,357 @@
+{
+  "projectName": "jtld-consulting-platform",
+  "company": "JTLD Consulting Inc",
+  "createdAt": "2026-01-29",
+  "description": "Permissions granted for building the JTLD Consulting Inc platform",
+
+  "fileSystem": {
+    "allowed": true,
+    "permissions": {
+      "read": {
+        "allowed": true,
+        "scope": "E:\\JTLD Consulting Inc-platform\\**",
+        "description": "Read any file within the project directory"
+      },
+      "write": {
+        "allowed": true,
+        "scope": "E:\\JTLD Consulting Inc-platform\\**",
+        "description": "Create new files within the project directory"
+      },
+      "edit": {
+        "allowed": true,
+        "scope": "E:\\JTLD Consulting Inc-platform\\**",
+        "description": "Modify existing files within the project directory"
+      },
+      "delete": {
+        "allowed": true,
+        "scope": "E:\\JTLD Consulting Inc-platform\\**",
+        "description": "Remove unused files within the project directory"
+      },
+      "createDirectories": {
+        "allowed": true,
+        "scope": "E:\\JTLD Consulting Inc-platform\\**",
+        "description": "Create folders for project structure"
+      }
+    }
+  },
+
+  "packageManagement": {
+    "allowed": true,
+    "permissions": {
+      "npmInstall": {
+        "allowed": true,
+        "description": "Install project dependencies via npm install"
+      },
+      "npmInstallDev": {
+        "allowed": true,
+        "description": "Install dev dependencies via npm install -D"
+      },
+      "npmUninstall": {
+        "allowed": true,
+        "description": "Remove unused packages"
+      },
+      "npmUpdate": {
+        "allowed": true,
+        "description": "Update packages for security patches and versions"
+      },
+      "npmAudit": {
+        "allowed": true,
+        "description": "Run npm audit to check for vulnerabilities"
+      },
+      "npx": {
+        "allowed": true,
+        "description": "Run package binaries via npx"
+      }
+    }
+  },
+
+  "developmentServers": {
+    "allowed": true,
+    "permissions": {
+      "startDevServer": {
+        "allowed": true,
+        "command": "npm run dev",
+        "port": 3000,
+        "description": "Start Next.js development server"
+      },
+      "stopDevServer": {
+        "allowed": true,
+        "description": "Stop running development server"
+      },
+      "startPrismaStudio": {
+        "allowed": true,
+        "command": "npx prisma studio",
+        "port": 5555,
+        "description": "Start Prisma visual database editor"
+      },
+      "runTests": {
+        "allowed": true,
+        "commands": ["npm test", "npm run test:e2e", "npx jest", "npx playwright test"],
+        "description": "Run automated test suites"
+      },
+      "buildProject": {
+        "allowed": true,
+        "command": "npm run build",
+        "description": "Create production build"
+      },
+      "lintProject": {
+        "allowed": true,
+        "command": "npm run lint",
+        "description": "Run ESLint code linting"
+      }
+    }
+  },
+
+  "database": {
+    "allowed": true,
+    "permissions": {
+      "connect": {
+        "allowed": true,
+        "description": "Connect to PostgreSQL database"
+      },
+      "createDatabase": {
+        "allowed": true,
+        "description": "Create development and test databases"
+      },
+      "runMigrations": {
+        "allowed": true,
+        "command": "npx prisma migrate dev",
+        "description": "Apply schema changes to database"
+      },
+      "seedDatabase": {
+        "allowed": true,
+        "command": "npx prisma db seed",
+        "description": "Insert sample data for development"
+      },
+      "resetDatabase": {
+        "allowed": true,
+        "command": "npx prisma migrate reset",
+        "description": "Clear and rebuild database during development"
+      },
+      "generateClient": {
+        "allowed": true,
+        "command": "npx prisma generate",
+        "description": "Generate Prisma Client from schema"
+      },
+      "queryData": {
+        "allowed": true,
+        "description": "Read and write data via Prisma Client"
+      }
+    }
+  },
+
+  "terminal": {
+    "allowed": true,
+    "permissions": {
+      "bashCommands": {
+        "allowed": true,
+        "scope": "E:\\JTLD Consulting Inc-platform\\**",
+        "description": "Run shell commands within project directory"
+      },
+      "windowsCommands": {
+        "allowed": true,
+        "description": "Run Windows-specific commands when needed"
+      },
+      "environmentVariables": {
+        "allowed": true,
+        "description": "Create and modify .env files for configuration"
+      },
+      "gitCommands": {
+        "allowed": true,
+        "commands": ["git init", "git add", "git commit", "git branch", "git checkout", "git merge", "git status", "git log", "git diff"],
+        "description": "Version control operations"
+      },
+      "processManagement": {
+        "allowed": true,
+        "description": "Start, stop, and manage development processes"
+      }
+    },
+    "restricted": {
+      "gitPushForce": {
+        "allowed": false,
+        "description": "Never force push without explicit user request"
+      },
+      "gitResetHard": {
+        "allowed": false,
+        "description": "Never hard reset without explicit user request"
+      },
+      "deleteOutsideProject": {
+        "allowed": false,
+        "description": "Never delete files outside project directory"
+      }
+    }
+  },
+
+  "network": {
+    "allowed": true,
+    "permissions": {
+      "webFetch": {
+        "allowed": true,
+        "description": "Fetch web content for research and documentation"
+      },
+      "webSearch": {
+        "allowed": true,
+        "description": "Search the web for solutions and package info"
+      },
+      "apiCalls": {
+        "allowed": true,
+        "description": "Test API endpoints during development"
+      },
+      "downloadPackages": {
+        "allowed": true,
+        "description": "Download from npm registry"
+      },
+      "webhookTesting": {
+        "allowed": true,
+        "description": "Test webhooks via Stripe CLI or similar tools"
+      }
+    }
+  },
+
+  "thirdPartyServices": {
+    "description": "Services to be configured as project progresses",
+    "services": {
+      "github": {
+        "allowed": true,
+        "phase": 1,
+        "description": "Version control, CI/CD pipelines"
+      },
+      "vercel": {
+        "allowed": true,
+        "phase": 2,
+        "description": "Hosting and deployment"
+      },
+      "supabaseOrNeon": {
+        "allowed": true,
+        "phase": 1,
+        "description": "Hosted PostgreSQL database"
+      },
+      "sendgridOrResend": {
+        "allowed": true,
+        "phase": 2,
+        "description": "Email delivery service"
+      },
+      "stripe": {
+        "allowed": true,
+        "phase": 4,
+        "description": "Payment processing"
+      },
+      "sentry": {
+        "allowed": true,
+        "phase": 2,
+        "description": "Error tracking and monitoring"
+      },
+      "cloudflare": {
+        "allowed": true,
+        "phase": 2,
+        "description": "DNS, CDN, and security"
+      },
+      "googleAnalytics": {
+        "allowed": true,
+        "phase": 3,
+        "description": "User analytics and tracking"
+      },
+      "openai": {
+        "allowed": true,
+        "phase": 3,
+        "description": "AI matching and NLP features"
+      }
+    }
+  },
+
+  "ide": {
+    "allowed": true,
+    "permissions": {
+      "installExtensions": {
+        "allowed": true,
+        "description": "Recommend and configure VS Code extensions"
+      },
+      "modifySettings": {
+        "allowed": true,
+        "scope": "E:\\JTLD Consulting Inc-platform\\.vscode\\**",
+        "description": "Project-specific VS Code settings"
+      },
+      "configureFormatters": {
+        "allowed": true,
+        "description": "Set up Prettier, ESLint auto-fix"
+      },
+      "setupDebugging": {
+        "allowed": true,
+        "description": "Create debug launch configurations"
+      }
+    }
+  },
+
+  "security": {
+    "permissions": {
+      "createEnvFiles": {
+        "allowed": true,
+        "description": "Create .env files for local secrets and config"
+      },
+      "generateSecrets": {
+        "allowed": true,
+        "description": "Generate auth secrets and random keys"
+      },
+      "manageGitignore": {
+        "allowed": true,
+        "description": "Ensure secrets are excluded from version control"
+      },
+      "passwordHashing": {
+        "allowed": true,
+        "description": "bcrypt operations for user authentication"
+      }
+    },
+    "restricted": {
+      "commitSecrets": {
+        "allowed": false,
+        "description": "Never commit .env files or credentials to git"
+      },
+      "exposeApiKeys": {
+        "allowed": false,
+        "description": "Never expose API keys in client-side code"
+      },
+      "disableSecurity": {
+        "allowed": false,
+        "description": "Never disable security features without explicit request"
+      }
+    }
+  },
+
+  "requiresUserAction": {
+    "description": "Actions that require the user to perform manually",
+    "actions": {
+      "installPostgreSQL": {
+        "description": "Install PostgreSQL on Windows or set up hosted DB",
+        "phase": 1
+      },
+      "createServiceAccounts": {
+        "description": "Sign up for Stripe, SendGrid, Vercel, GitHub, etc.",
+        "phase": "various"
+      },
+      "provideApiKeys": {
+        "description": "Share API keys and credentials for third-party services",
+        "phase": "various"
+      },
+      "purchaseDomain": {
+        "description": "Buy a custom domain for the platform",
+        "phase": 2
+      },
+      "approveDeployments": {
+        "description": "Approve pushes to production",
+        "phase": 2
+      },
+      "browserTesting": {
+        "description": "Visually review the UI in browser",
+        "phase": "ongoing"
+      },
+      "legalReview": {
+        "description": "Review terms of service and privacy policy",
+        "phase": 2
+      },
+      "financialSetup": {
+        "description": "Set up business account for payment processing",
+        "phase": 4
+      }
+    }
+  }
+}
