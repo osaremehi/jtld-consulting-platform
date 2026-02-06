@@ -1,33 +1,28 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = {
-  "For Candidates": [
-    { label: "Search Jobs", href: "/jobs" },
-    { label: "Submit Resume", href: "/register?type=candidate" },
-    { label: "Career Resources", href: "/resources" },
-    { label: "Salary Guide", href: "/resources/salary-guide" },
-    { label: "IT Hiring Trends", href: "/resources/hiring-trends" },
-  ],
-  "For Employers": [
-    { label: "Find Talent", href: "/find-talent" },
-    { label: "Post a Job", href: "/employer/post-job" },
-    { label: "Our Services", href: "/services" },
-    { label: "Request a Quote", href: "/contact?type=employer" },
-    { label: "Client Resources", href: "/resources" },
-  ],
   Services: [
-    { label: "Contract Staffing", href: "/services/contract-staffing" },
-    { label: "Direct Hire", href: "/services/direct-hire" },
-    { label: "Contractor Payroll", href: "/services/contractor-payroll" },
-    { label: "Managed Services", href: "/services/managed-services" },
-    { label: "IT Consulting", href: "/services/cloud" },
-    { label: "Curated Teams", href: "/services/curated-teams" },
+    { label: "Business Consulting", href: "/services/business-consulting" },
+    { label: "Business Process Services", href: "/services/business-process" },
+    { label: "Managed IT Services", href: "/services/managed-it" },
+    { label: "Artificial Intelligence", href: "/services/ai" },
+    { label: "Data Analytics", href: "/services/data-analytics" },
+    { label: "Cloud & Hybrid IT", href: "/services/cloud-hybrid" },
+  ],
+  Industries: [
+    { label: "Financial Services", href: "/industries/financial-services" },
+    { label: "Healthcare", href: "/industries/healthcare" },
+    { label: "Energy & Utilities", href: "/industries/energy" },
+    { label: "Government", href: "/industries/government" },
+    { label: "Retail & E-Commerce", href: "/industries/retail" },
+    { label: "Manufacturing", href: "/industries/manufacturing" },
   ],
   Company: [
     { label: "About Us", href: "/about" },
     { label: "Leadership", href: "/about/leadership" },
-    { label: "Careers", href: "/about/careers" },
-    { label: "DEI Commitment", href: "/about/dei" },
+    { label: "Careers", href: "/careers" },
+    { label: "Insights & Blog", href: "/insights" },
     { label: "Contact Us", href: "/contact" },
   ],
 };
@@ -69,14 +64,17 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand column */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="inline-block mb-4">
-              <span className="text-xl font-bold text-white">JTLD</span>
-              <span className="text-xl font-light text-primary-400 ml-1">Consulting</span>
+          <div className="lg:col-span-2">
+            <Link href="/" className="inline-flex items-center gap-2 mb-4">
+              <Image src="/logo.svg" alt="JTLD Consulting" width={40} height={44} className="invert brightness-200" />
+              <div className="flex flex-col leading-none">
+                <span className="text-lg font-bold text-white">JTLD</span>
+                <span className="text-xs text-gray-400 tracking-widest uppercase">Consulting</span>
+              </div>
             </Link>
-            <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-              Connecting top IT professionals with leading employers across Canada. Staffing, consulting,
-              and workforce solutions.
+            <p className="text-sm text-gray-400 mb-6 leading-relaxed max-w-sm">
+              Strategic business consulting, technology services, and digital transformation
+              solutions that drive measurable results for organizations across industries.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (

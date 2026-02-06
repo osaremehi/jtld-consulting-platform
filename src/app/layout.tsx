@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import ChatBot from "@/components/ChatBot";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,11 +17,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "JTLD Consulting Inc | IT Staffing & Technology Consulting",
+    default: "JTLD Consulting Inc | Business Consulting & Technology Services",
     template: "%s | JTLD Consulting Inc",
   },
   description:
-    "JTLD Consulting Inc connects IT professionals with employers seeking contract, direct hire, and project-based IT talent. Staffing, consulting, and workforce solutions.",
+    "JTLD Consulting Inc delivers strategic business consulting, managed IT services, AI solutions, data analytics, and cloud infrastructure to drive measurable results.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL || "https://jtldinc.com"
   ),
@@ -39,7 +42,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <ChatBot />
       </body>
     </html>
   );

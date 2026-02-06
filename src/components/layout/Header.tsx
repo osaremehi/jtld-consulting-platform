@@ -2,41 +2,37 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
-  { label: "Find Talent", href: "/find-talent" },
-  { label: "Search Jobs", href: "/jobs" },
   {
     label: "Services",
     href: "/services",
     children: [
-      { label: "Contract Staffing", href: "/services/contract-staffing" },
-      { label: "Direct Hire", href: "/services/direct-hire" },
-      { label: "Contractor Payroll", href: "/services/contractor-payroll" },
-      { label: "Professional Services", href: "/services/professional-services" },
-      { label: "Curated Teams (PODs)", href: "/services/curated-teams" },
-      { label: "Managed Services (MSP)", href: "/services/managed-services" },
-      { label: "Cloud Services", href: "/services/cloud" },
-      { label: "Data & Analytics", href: "/services/data-analytics" },
-      { label: "AI, ML & Automation", href: "/services/ai-ml-automation" },
-      { label: "Cybersecurity & Risk", href: "/services/cybersecurity" },
+      { label: "Business Consulting", href: "/services/business-consulting" },
+      { label: "Business Process Services", href: "/services/business-process" },
+      { label: "Managed IT Services", href: "/services/managed-it" },
+      { label: "Artificial Intelligence", href: "/services/ai" },
+      { label: "Data Analytics", href: "/services/data-analytics" },
+      { label: "Cloud & Hybrid IT", href: "/services/cloud-hybrid" },
     ],
   },
   {
-    label: "Sectors",
-    href: "/sectors",
+    label: "Industries",
+    href: "/industries",
     children: [
-      { label: "Financial Services & FinTech", href: "/sectors/financial-services" },
-      { label: "Software & IT", href: "/sectors/software-it" },
-      { label: "Healthcare & Life Sciences", href: "/sectors/healthcare" },
-      { label: "Government & Public Sector", href: "/sectors/government" },
-      { label: "Energy & Utilities", href: "/sectors/energy" },
-      { label: "Engineering & Construction", href: "/sectors/engineering" },
-      { label: "View All Sectors", href: "/sectors" },
+      { label: "Financial Services", href: "/industries/financial-services" },
+      { label: "Healthcare & Life Sciences", href: "/industries/healthcare" },
+      { label: "Energy & Utilities", href: "/industries/energy" },
+      { label: "Government & Public Sector", href: "/industries/government" },
+      { label: "Retail & E-Commerce", href: "/industries/retail" },
+      { label: "Manufacturing", href: "/industries/manufacturing" },
+      { label: "View All Industries", href: "/industries" },
     ],
   },
-  { label: "Resources", href: "/resources" },
   { label: "About", href: "/about" },
+  { label: "Insights", href: "/insights" },
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -60,13 +56,7 @@ export default function Header() {
           </div>
           <div className="flex items-center gap-3">
             <Link href="/login" className="hover:text-primary-200 transition-colors">
-              Log In
-            </Link>
-            <Link
-              href="/register"
-              className="bg-accent-500 text-white px-3 py-1 rounded text-xs font-medium hover:bg-accent-600 transition-colors"
-            >
-              Register
+              Client Portal
             </Link>
           </div>
         </div>
@@ -77,9 +67,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold tracking-tight text-primary-900">JTLD</span>
-              <span className="text-2xl font-light tracking-tight text-primary-600 ml-1">Consulting</span>
+            <Image src="/logo.svg" alt="JTLD Consulting" width={48} height={52} priority />
+            <div className="hidden sm:flex flex-col leading-none">
+              <span className="text-lg font-bold tracking-tight text-primary-900">JTLD</span>
+              <span className="text-xs text-gray-500 tracking-widest uppercase">Consulting</span>
             </div>
           </Link>
 
@@ -104,7 +95,6 @@ export default function Header() {
                   )}
                 </Link>
 
-                {/* Dropdown */}
                 {link.children && openDropdown === link.label && (
                   <div className="absolute top-full left-0 mt-0 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
                     {link.children.map((child) => (
@@ -122,19 +112,13 @@ export default function Header() {
             ))}
           </div>
 
-          {/* CTA buttons (desktop) */}
-          <div className="hidden lg:flex items-center gap-2">
+          {/* CTA button (desktop) */}
+          <div className="hidden lg:flex items-center">
             <Link
-              href="/jobs"
-              className="text-sm font-medium px-4 py-2 text-primary-700 border border-primary-200 rounded-lg hover:bg-primary-50 transition-colors"
+              href="/consultation"
+              className="text-sm font-medium px-5 py-2.5 bg-primary-700 text-white rounded-lg hover:bg-primary-800 transition-colors"
             >
-              Find Work
-            </Link>
-            <Link
-              href="/find-talent"
-              className="text-sm font-medium px-4 py-2 bg-primary-700 text-white rounded-lg hover:bg-primary-800 transition-colors"
-            >
-              Find Talent
+              Get a Consultation
             </Link>
           </div>
 
@@ -184,20 +168,13 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="flex flex-col gap-2 pt-4 px-3">
+            <div className="pt-4 px-3">
               <Link
-                href="/jobs"
+                href="/consultation"
                 onClick={() => setMobileOpen(false)}
-                className="text-center text-sm font-medium px-4 py-2.5 text-primary-700 border border-primary-200 rounded-lg hover:bg-primary-50 transition-colors"
+                className="block text-center text-sm font-medium px-4 py-2.5 bg-primary-700 text-white rounded-lg hover:bg-primary-800 transition-colors"
               >
-                Find Work
-              </Link>
-              <Link
-                href="/find-talent"
-                onClick={() => setMobileOpen(false)}
-                className="text-center text-sm font-medium px-4 py-2.5 bg-primary-700 text-white rounded-lg hover:bg-primary-800 transition-colors"
-              >
-                Find Talent
+                Get a Consultation
               </Link>
             </div>
           </div>
