@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ResumeForm from "@/components/ResumeForm";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -213,22 +214,19 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* General Application CTA */}
-      <section className="py-20 lg:py-28 bg-primary-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Don&apos;t See the Right Fit?
-          </h2>
-          <p className="text-lg text-primary-200 mb-10 max-w-2xl mx-auto">
-            We&apos;re always looking for talented people. Send us your resume and we&apos;ll
-            reach out when a role matches your skills and experience.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-primary-900 bg-white rounded-lg hover:bg-gray-100 transition-colors"
-          >
-            Submit a General Application
-          </Link>
+      {/* Submit Resume */}
+      <section id="apply" className="py-20 lg:py-28 bg-primary-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Submit Your Resume
+            </h2>
+            <p className="text-lg text-primary-200">
+              Don&apos;t see the right fit? Send us your resume and we&apos;ll
+              reach out when a role matches your skills and experience.
+            </p>
+          </div>
+          <ResumeForm />
         </div>
       </section>
     </>

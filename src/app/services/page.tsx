@@ -131,6 +131,55 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Client Stories */}
+      <section className="py-20 lg:py-28 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
+              Client Stories
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Trusted by Leaders Across Industries
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                quote: "JTLD Consulting helped us redesign our entire supply chain process. The results were immediate — 30% cost reduction in the first quarter.",
+                name: "Sarah M.",
+                title: "COO, Manufacturing Firm",
+              },
+              {
+                quote: "Their AI implementation roadmap gave us clarity on where to invest. We went from zero AI capabilities to production models in 6 months.",
+                name: "David K.",
+                title: "VP of Innovation, Financial Services",
+              },
+              {
+                quote: "The managed IT services team at JTLD transformed our infrastructure. Uptime went from 97% to 99.9% while reducing our IT spend by 25%.",
+                name: "Jennifer L.",
+                title: "CTO, Healthcare Startup",
+              },
+            ].map((testimonial) => (
+              <div
+                key={testimonial.name}
+                className="bg-white rounded-xl p-8 border border-gray-100"
+              >
+                <svg className="w-8 h-8 text-primary-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z" />
+                </svg>
+                <blockquote className="text-gray-700 mb-6 leading-relaxed">
+                  {testimonial.quote}
+                </blockquote>
+                <div>
+                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
+                  <p className="text-sm text-gray-500">{testimonial.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 lg:py-28 bg-primary-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">

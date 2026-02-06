@@ -76,38 +76,6 @@ const services = [
   },
 ];
 
-const industries = [
-  { name: "Financial Services", href: "/industries/financial-services" },
-  { name: "Healthcare & Life Sciences", href: "/industries/healthcare" },
-  { name: "Energy & Utilities", href: "/industries/energy" },
-  { name: "Government & Public Sector", href: "/industries/government" },
-  { name: "Retail & E-Commerce", href: "/industries/retail" },
-  { name: "Manufacturing", href: "/industries/manufacturing" },
-  { name: "Telecommunications", href: "/industries/telecom" },
-  { name: "Education", href: "/industries/education" },
-];
-
-const testimonials = [
-  {
-    quote:
-      "JTLD Consulting helped us redesign our entire supply chain process. The results were immediate — 30% cost reduction in the first quarter.",
-    name: "Sarah M.",
-    title: "COO, Manufacturing Firm",
-  },
-  {
-    quote:
-      "Their AI implementation roadmap gave us clarity on where to invest. We went from zero AI capabilities to production models in 6 months.",
-    name: "David K.",
-    title: "VP of Innovation, Financial Services",
-  },
-  {
-    quote:
-      "The managed IT services team at JTLD transformed our infrastructure. Uptime went from 97% to 99.9% while reducing our IT spend by 25%.",
-    name: "Jennifer L.",
-    title: "CTO, Healthcare Startup",
-  },
-];
-
 export default function Home() {
   return (
     <>
@@ -206,84 +174,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why JTLD Section */}
-      <section className="py-20 lg:py-28 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
-                Why JTLD Consulting
-              </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                A Partner Invested in Your Success
-              </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                We don&apos;t just advise — we embed with your teams to ensure strategies translate
-                into execution. Our consultants bring deep industry expertise and a commitment
-                to measurable outcomes.
-              </p>
-              <div className="space-y-4">
-                {[
-                  "Outcome-driven engagements with clear KPIs",
-                  "Cross-industry expertise from seasoned consultants",
-                  "Technology-enabled solutions, not just slide decks",
-                  "Flexible engagement models that fit your needs",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <svg className="w-5 h-5 text-primary-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <span className="text-gray-700">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              {industries.map((industry) => (
-                <Link
-                  key={industry.name}
-                  href={industry.href}
-                  className="group p-5 bg-white rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-md transition-all duration-200 text-center"
-                >
-                  <span className="text-sm font-medium text-gray-700 group-hover:text-primary-700 transition-colors">
-                    {industry.name}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-20 lg:py-28 bg-white">
+      {/* Professional Services Section */}
+      <section className="py-20 lg:py-28 bg-primary-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
-              Client Stories
+              Professional Services
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Trusted by Leaders Across Industries
+              Expert Teams, Delivered On Demand
             </h2>
+            <p className="text-lg text-gray-600">
+              Augment your workforce with vetted professionals who integrate seamlessly
+              into your projects and deliver from day one.
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Staff Augmentation",
+                description: "Scale your team with pre-vetted consultants in technology, strategy, and operations — on your timeline.",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Project-Based Delivery",
+                description: "Engage dedicated project teams with defined scope, milestones, and deliverables — from discovery to go-live.",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                  </svg>
+                ),
+              },
+              {
+                title: "Managed Services",
+                description: "Outsource entire functions — IT operations, analytics, security — to our managed teams with SLA-backed reliability.",
+                icon: (
+                  <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                  </svg>
+                ),
+              },
+            ].map((item) => (
               <div
-                key={testimonial.name}
-                className="bg-gray-50 rounded-xl p-8 border border-gray-100"
+                key={item.title}
+                className="relative p-8 bg-white rounded-xl border border-primary-100 hover:border-primary-200 hover:shadow-lg transition-all duration-200"
               >
-                <svg className="w-8 h-8 text-primary-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z" />
-                </svg>
-                <blockquote className="text-gray-700 mb-6 leading-relaxed">
-                  {testimonial.quote}
-                </blockquote>
-                <div>
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.title}</p>
+                <div className="text-primary-600 mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">{item.description}</p>
+                <div className="h-32 bg-primary-50 rounded-lg border-2 border-dashed border-primary-200 flex items-center justify-center">
+                  <span className="text-sm text-primary-400 font-medium">Coming Soon</span>
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/consultation"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-primary-700 rounded-lg hover:bg-primary-800 transition-colors"
+            >
+              Discuss Your Needs
+              <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

@@ -255,6 +255,64 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Why JTLD */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
+                Why JTLD Consulting
+              </p>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                A Partner Invested in Your Success
+              </h2>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                We don&apos;t just advise — we embed with your teams to ensure strategies translate
+                into execution. Our consultants bring deep industry expertise and a commitment
+                to measurable outcomes.
+              </p>
+              <div className="space-y-4">
+                {[
+                  "Outcome-driven engagements with clear KPIs",
+                  "Cross-industry expertise from seasoned consultants",
+                  "Technology-enabled solutions, not just slide decks",
+                  "Flexible engagement models that fit your needs",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-primary-600 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-700">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { name: "Financial Services", href: "/industries/financial-services" },
+                { name: "Healthcare & Life Sciences", href: "/industries/healthcare" },
+                { name: "Energy & Utilities", href: "/industries/energy" },
+                { name: "Government & Public Sector", href: "/industries/government" },
+                { name: "Retail & E-Commerce", href: "/industries/retail" },
+                { name: "Manufacturing", href: "/industries/manufacturing" },
+                { name: "Telecommunications", href: "/industries/telecom" },
+                { name: "Education", href: "/industries/education" },
+              ].map((industry) => (
+                <Link
+                  key={industry.name}
+                  href={industry.href}
+                  className="group p-5 bg-gray-50 rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-md transition-all duration-200 text-center"
+                >
+                  <span className="text-sm font-medium text-gray-700 group-hover:text-primary-700 transition-colors">
+                    {industry.name}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 lg:py-28 bg-primary-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">

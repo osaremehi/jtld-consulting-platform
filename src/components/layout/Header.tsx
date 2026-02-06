@@ -112,8 +112,20 @@ export default function Header() {
             ))}
           </div>
 
-          {/* CTA button (desktop) */}
-          <div className="hidden lg:flex items-center">
+          {/* Auth + CTA (desktop) */}
+          <div className="hidden lg:flex items-center gap-3">
+            <Link
+              href="/login"
+              className="text-sm font-medium px-4 py-2 text-gray-700 hover:text-primary-700 transition-colors"
+            >
+              Log In
+            </Link>
+            <Link
+              href="/signup"
+              className="text-sm font-medium px-4 py-2 border border-primary-700 text-primary-700 rounded-lg hover:bg-primary-50 transition-colors"
+            >
+              Sign Up
+            </Link>
             <Link
               href="/consultation"
               className="text-sm font-medium px-5 py-2.5 bg-primary-700 text-white rounded-lg hover:bg-primary-800 transition-colors"
@@ -168,7 +180,23 @@ export default function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-4 px-3">
+            <div className="pt-4 px-3 space-y-2">
+              <div className="flex gap-2">
+                <Link
+                  href="/login"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex-1 text-center text-sm font-medium px-4 py-2.5 text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Log In
+                </Link>
+                <Link
+                  href="/signup"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex-1 text-center text-sm font-medium px-4 py-2.5 border border-primary-700 text-primary-700 rounded-lg hover:bg-primary-50 transition-colors"
+                >
+                  Sign Up
+                </Link>
+              </div>
               <Link
                 href="/consultation"
                 onClick={() => setMobileOpen(false)}
