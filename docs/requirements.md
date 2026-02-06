@@ -6,7 +6,7 @@
 |-------|-------|
 | Project Name | JTLD Consulting Inc Platform |
 | Company | JTLD Consulting Inc |
-| Reference Models | S.i. Systems (sisystems.com), TEKsystems (teksystems.com) |
+| Reference Models | CGI (cgi.com) |
 | Version | 2.0 |
 | Created | 2026-01-29 |
 | Status | Draft |
@@ -30,7 +30,7 @@
 
 ### 1.1 Purpose
 
-Build a full-featured IT staffing, recruitment, and technology consulting platform for **JTLD Consulting Inc**, modeled after S.i. Systems and TEKsystems. The platform connects IT professionals (candidates/contractors) with employers seeking contract, direct hire, and project-based IT talent, while also offering managed services, technology consulting, workforce development, and digital transformation solutions.
+Build a comprehensive business consulting platform for **JTLD Consulting Inc**, modeled after CGI. The platform delivers strategic guidance, consulting services, and end-to-end solutions that help clients accelerate their digital transformation, optimize operations, and achieve measurable business outcomes through expert consulting, managed services, and technology enablement.
 
 ### 1.1.1 Existing Website
 
@@ -44,52 +44,62 @@ JTLD Consulting Inc has an existing website at **http://www.jtldconsulting.com/*
 
 ### 1.2 Vision
 
-To position JTLD Consulting Inc as a trusted platform for on-demand IT professionals, offering intelligent matching, streamlined hiring workflows, contractor payroll services, and curated team solutions (PODs) — serving candidates, employers, and internal staff.
+To position JTLD Consulting Inc as a trusted business consulting partner that helps enterprises navigate digital transformation, optimize business processes, and unlock competitive advantage through strategic consulting, managed services, and technology solutions.
 
 ### 1.3 Business Model
 
 | Revenue Stream | Description |
-|---------------|-------------|
-| Contract Staffing Fees | Markup/margin on contractor hourly rates |
-| Direct Hire Placement Fees | One-time fee on permanent placements |
-| Contractor Payroll (Flo-Thru) | Payrolling fee for self-recruited contractors |
-| Professional Services SOW | Project-based consulting fees |
-| Curated Teams (PODs) | Curated team engagement fees |
-| Managed Service Provider (MSP) | Ongoing MSP management and vendor fees |
-| IT & Business Consulting | Cloud, data, AI/ML, cybersecurity consulting fees |
-| Workforce Development | Training, upskilling, and certification program fees |
-| Premium Job Postings | Employers pay for featured/priority listings |
-| Subscription Plans | Tiered employer access plans |
+|---------------|----------------|
+| Business Consulting | Strategic guidance and transformation consulting |
+| Business Process Services | Process optimization, automation, and outsourcing |
+| Managed IT Services | End-to-end IT management and outsourcing |
+| Professional Services SOW | Project-based consulting and implementation |
+| Recurring Managed Services | Ongoing service contracts and retainers |
+| Training & Certification | Professional development and upskilling programs |
 
-### 1.4 Core Services (Modeled After S.i. Systems + TEKsystems)
+### 1.4 Core Services (Modeled After CGI)
 
-#### Talent Services
-1. **Contract Staffing** — On-demand IT professionals for short or long-term engagements
-2. **Direct Hire** — Permanent placement of full-time IT employees
-3. **Contractor Payroll (Flo-Thru)** — Payroll management for self-recruited contractors
-4. **Managed Service Provider (MSP)** — End-to-end contingent workforce management with vendor coordination, compliance, and reporting
-5. **Curated Teams (PODs)** — Pre-assembled teams of IT specialists for client-specific goals
+#### 1. Business Consulting
+- **Digital Transformation Strategy** — End-to-end digital strategy, roadmap, and transformation planning
+- **Enterprise Strategy** — Market analysis, competitive positioning, growth strategies
+- **Operational Excellence** — Process optimization, efficiency improvements, cost reduction
+- **Change Management** — Organizational change, culture transformation, stakeholder engagement
+- **Technology Strategy** — IT alignment with business goals, technology roadmaps, vendor evaluation
 
-#### IT & Business Consulting Services
-6. **Professional Services SOW** — Scoped IT project delivery with defined deliverables
-7. **Cloud Services** — Cloud migration, architecture, optimization (AWS, Azure, GCP)
-8. **Data & Analytics** — Data engineering, BI, data governance, data lake/warehouse solutions
-9. **AI, ML & Automation** — AI strategy, model development, intelligent automation, agentic AI
-10. **Cybersecurity & Risk** — Security assessments, IAM, zero trust, compliance, incident response
-11. **Application Innovation** — Custom app development, modernization, full-stack omnichannel experiences
-12. **Digital Workplace Services** — End-user support, collaboration tools, endpoint management, Microsoft Modern Work
-13. **Enterprise Service Management** — ServiceNow, ITSM, process automation, IT operations
-14. **Agile Transformation** — DevOps, CI/CD, agile coaching, delivery pipeline optimization
-15. **Business Modernization** — Legacy platform migration, digital transformation, process re-engineering
+#### 2. Business Process Services
+- **Process Automation** — RPA, workflow automation, intelligent process automation (IPA)
+- **Business Process Optimization** — Lean Six Sigma, process re-engineering, efficiency improvements
+- **Finance & Accounting Outsourcing** — AP/AR, payroll, accounting process outsourcing
+- **Human Resources Services** — HR administration, recruitment process outsourcing, talent management
+- **Customer Experience Optimization** — Journey mapping, process optimization, service design
 
-#### Customer Experience Services
-16. **Brand Strategy & Design** — Branding, identity, creative direction
-17. **Digital Strategy & Experience Design** — UX/UI strategy, customer journey mapping, design systems
+#### 3. Managed IT Services
+- **Infrastructure Management** — Cloud infrastructure, on-premises, hybrid IT management
+- **IT Operations Outsourcing** — End-to-end IT management, service desk, NOC services
+- **Security & Compliance Management** — Managed security services, compliance monitoring, incident response
+- **Applications Management** — Application support, maintenance, optimization
+- **End-user Services** — Desktop management, mobility, end-user support
 
-#### Workforce Development
-18. **Training & Upskilling Programs** — Instructor-led courses (500+ catalog), certifications, bootcamps
-19. **Rising Talent Programs** — Student, co-op, new grad, and veteran transition programs
-20. **Diversity, Equity & Inclusion (DEI)** — Inclusive hiring strategies, workforce diversity reporting
+#### 4. Artificial Intelligence
+- **AI Strategy & Advisory** — AI roadmap, use case identification, implementation planning
+- **Machine Learning Solutions** — Model development, MLOps, AI/ML implementation
+- **Intelligent Automation** — Agentic AI, chatbots, cognitive automation, intelligent process automation
+- **Generative AI Solutions** — LLM implementations, prompt engineering, custom AI applications
+- **AI Governance** — Responsible AI, ethics, risk management, compliance
+
+#### 5. Data Analytics
+- **Data Strategy & Governance** — Data architecture, governance frameworks, data quality
+- **Business Intelligence** — BI platforms, dashboards, analytics, reporting
+- **Advanced Analytics** — Predictive analytics, prescriptive analytics, statistical modeling
+- **Data Engineering** — Data pipeline development, data lake/warehouse architecture, ETL/ELT
+- **Analytics Consulting** — Performance analytics, marketing analytics, financial analytics
+
+#### 6. Cloud & Hybrid IT
+- **Cloud Migration** — Assessment, planning, migration execution (AWS, Azure, GCP)
+- **Cloud Architecture** — Solution design, cloud-native architecture, scalability planning
+- **Cloud Optimization** — Cost optimization, performance optimization, workload management
+- **Hybrid & Multi-Cloud** — Hybrid cloud strategies, multi-cloud orchestration, integration
+- **Cloud Governance** — Security, compliance, cost management, operational excellence
 
 ### 1.5 Industry Sectors Served
 
