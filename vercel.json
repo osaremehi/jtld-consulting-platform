@@ -1,0 +1,28 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "regions": ["cle1"],
+  "build": {
+    "env": {
+      "NEXT_TELEMETRY_DISABLED": "1"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/cleanup-expired-jobs",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/send-job-alerts",
+      "schedule": "0 8 * * *"
+    },
+    {
+      "path": "/api/cron/send-weekly-digest",
+      "schedule": "0 9 * * 1"
+    },
+    {
+      "path": "/api/cron/timesheet-reminders",
+      "schedule": "0 10 * * 5"
+    }
+  ]
+}

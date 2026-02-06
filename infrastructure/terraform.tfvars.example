@@ -1,0 +1,6 @@
+# Copy this file to terraform.tfvars and fill in your values
+# NEVER commit terraform.tfvars to git
+
+aws_region   = "ca-central-1"
+environment  = "production"
+project_name = "jtld-platform"
