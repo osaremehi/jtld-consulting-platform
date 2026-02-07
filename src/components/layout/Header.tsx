@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const navLinks = [
   {
@@ -41,7 +42,7 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 shadow-sm">
       {/* Top bar */}
       <div className="bg-primary-900 text-white text-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-9">
@@ -67,10 +68,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
-            <Image src="/logo.svg" alt="JTLD Consulting" width={48} height={52} priority />
+            <Image src="/logo.svg" alt="JTLD Consulting" width={48} height={52} priority className="dark:invert dark:brightness-200" />
             <div className="hidden sm:flex flex-col leading-none">
-              <span className="text-lg font-bold tracking-tight text-primary-900">JTLD</span>
-              <span className="text-xs text-gray-500 tracking-widest uppercase">Consulting</span>
+              <span className="text-lg font-bold tracking-tight text-primary-900 dark:text-white">JTLD</span>
+              <span className="text-xs text-gray-500 dark:text-gray-400 tracking-widest uppercase">Consulting</span>
             </div>
           </Link>
 
@@ -85,7 +86,7 @@ export default function Header() {
               >
                 <Link
                   href={link.href}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary-700 transition-colors rounded-md hover:bg-gray-50"
+                  className="px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-primary-700 dark:hover:text-primary-400 transition-colors rounded-md hover:bg-gray-50 dark:hover:bg-gray-800"
                 >
                   {link.label}
                   {link.children && (
@@ -96,12 +97,12 @@ export default function Header() {
                 </Link>
 
                 {link.children && openDropdown === link.label && (
-                  <div className="absolute top-full left-0 mt-0 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-0 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-100 dark:border-gray-700 py-2 z-50">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-700 transition-colors"
+                        className="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-primary-50 dark:hover:bg-primary-900/40 hover:text-primary-700 dark:hover:text-primary-400 transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -114,15 +115,16 @@ export default function Header() {
 
           {/* Auth + CTA (desktop) */}
           <div className="hidden lg:flex items-center gap-3">
+            <ThemeToggle />
             <Link
               href="/login"
-              className="text-sm font-medium px-4 py-2 text-gray-700 hover:text-primary-700 transition-colors"
+              className="text-sm font-medium px-4 py-2 text-gray-700 dark:text-gray-200 hover:text-primary-700 dark:hover:text-primary-400 transition-colors"
             >
               Log In
             </Link>
             <Link
               href="/signup"
-              className="text-sm font-medium px-4 py-2 border border-primary-700 text-primary-700 rounded-lg hover:bg-primary-50 transition-colors"
+              className="text-sm font-medium px-4 py-2 border border-primary-700 dark:border-primary-400 text-primary-700 dark:text-primary-400 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/40 transition-colors"
             >
               Sign Up
             </Link>
@@ -135,32 +137,35 @@ export default function Header() {
           </div>
 
           {/* Mobile menu button */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-gray-600 hover:text-gray-900 rounded-md"
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
+          <div className="lg:hidden flex items-center gap-1">
+            <ThemeToggle />
+            <button
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white rounded-md"
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile nav */}
         {mobileOpen && (
-          <div className="lg:hidden border-t border-gray-100 py-4 space-y-1">
+          <div className="lg:hidden border-t border-gray-100 dark:border-gray-700 py-4 space-y-1">
             {navLinks.map((link) => (
               <div key={link.label}>
                 <Link
                   href={link.href}
                   onClick={() => !link.children && setMobileOpen(false)}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-primary-50 hover:text-primary-700 rounded-md"
+                  className="block px-3 py-2 text-base font-medium text-gray-700 dark:text-gray-200 hover:bg-primary-50 dark:hover:bg-primary-900/40 hover:text-primary-700 dark:hover:text-primary-400 rounded-md"
                 >
                   {link.label}
                 </Link>
@@ -171,7 +176,7 @@ export default function Header() {
                         key={child.href}
                         href={child.href}
                         onClick={() => setMobileOpen(false)}
-                        className="block px-3 py-1.5 text-sm text-gray-600 hover:text-primary-700"
+                        className="block px-3 py-1.5 text-sm text-gray-600 dark:text-gray-300 hover:text-primary-700 dark:hover:text-primary-400"
                       >
                         {child.label}
                       </Link>
@@ -185,14 +190,14 @@ export default function Header() {
                 <Link
                   href="/login"
                   onClick={() => setMobileOpen(false)}
-                  className="flex-1 text-center text-sm font-medium px-4 py-2.5 text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+                  className="flex-1 text-center text-sm font-medium px-4 py-2.5 text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                 >
                   Log In
                 </Link>
                 <Link
                   href="/signup"
                   onClick={() => setMobileOpen(false)}
-                  className="flex-1 text-center text-sm font-medium px-4 py-2.5 border border-primary-700 text-primary-700 rounded-lg hover:bg-primary-50 transition-colors"
+                  className="flex-1 text-center text-sm font-medium px-4 py-2.5 border border-primary-700 dark:border-primary-400 text-primary-700 dark:text-primary-400 rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/40 transition-colors"
                 >
                   Sign Up
                 </Link>

@@ -32,7 +32,7 @@ export default function TelecomPage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             How We Help
@@ -43,7 +43,7 @@ export default function TelecomPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   5G Network Deployment & Optimization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Plan and deploy next-generation 5G networks with optimized
                   coverage, capacity planning, spectrum management, and
                   network slicing strategies that enable new services and
@@ -54,7 +54,7 @@ export default function TelecomPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Network Performance & Optimization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Maximize network performance with real-time monitoring,
                   automated optimization, and predictive analytics that improve
                   quality of service, reduce congestion, and enhance user
@@ -65,7 +65,7 @@ export default function TelecomPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Customer Experience & Retention
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Reduce churn and increase customer satisfaction with
                   AI-powered analytics that identify at-risk subscribers,
                   personalize offers, and enable proactive service management
@@ -78,7 +78,7 @@ export default function TelecomPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Billing & Revenue Management Modernization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Transform billing operations with cloud-based BSS/OSS systems,
                   real-time charging, flexible pricing models, and automated
                   revenue assurance that support complex service offerings.
@@ -88,7 +88,7 @@ export default function TelecomPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   OSS/BSS Transformation
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Modernize operational and business support systems with
                   cloud-native platforms, microservices architectures, and API
                   integration that enable agility and faster time-to-market for
@@ -99,7 +99,7 @@ export default function TelecomPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   IoT & Enterprise Solutions
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Develop new revenue streams with IoT connectivity platforms,
                   M2M solutions, and enterprise services that leverage network
                   assets for smart cities, connected vehicles, and industrial
@@ -112,7 +112,7 @@ export default function TelecomPage() {
       </section>
 
       {/* Relevant Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             Relevant Services
@@ -120,67 +120,67 @@ export default function TelecomPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
               href="/services/business-consulting"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for telecom transformation and growth.
               </p>
             </Link>
             <Link
               href="/services/business-process"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline operations from network planning to customer care.
               </p>
             </Link>
             <Link
               href="/services/managed-it"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Reliable infrastructure for carrier-grade operations.
               </p>
             </Link>
             <Link
               href="/services/ai"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Network optimization and customer analytics powered by AI.
               </p>
             </Link>
             <Link
               href="/services/data-analytics"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform network and customer data into telecom insights.
               </p>
             </Link>
             <Link
               href="/services/cloud-hybrid"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Cloud-native solutions for modern telecom services.
               </p>
             </Link>

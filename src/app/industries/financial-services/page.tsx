@@ -32,7 +32,7 @@ export default function FinancialServicesPage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             How We Help
@@ -43,7 +43,7 @@ export default function FinancialServicesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Regulatory Compliance & Risk Management
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Navigate complex regulatory requirements with confidence.
                   We help implement compliance frameworks, automate reporting,
                   and build risk management systems that meet SOX, Basel III,
@@ -54,7 +54,7 @@ export default function FinancialServicesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Digital Banking Transformation
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Modernize your banking platforms with mobile-first solutions,
                   open banking APIs, and seamless omnichannel experiences that
                   meet evolving customer expectations in the digital age.
@@ -64,7 +64,7 @@ export default function FinancialServicesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Fraud Detection & Prevention
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Leverage AI and machine learning to detect fraudulent
                   transactions in real-time, reduce false positives, and
                   protect your customers while maintaining frictionless
@@ -77,7 +77,7 @@ export default function FinancialServicesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Legacy System Modernization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Migrate from outdated mainframe systems to modern, scalable
                   cloud architectures without disrupting critical operations.
                   Our phased approach minimizes risk while maximizing ROI.
@@ -87,7 +87,7 @@ export default function FinancialServicesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Data Analytics & Business Intelligence
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Unlock the value of your financial data with advanced
                   analytics, predictive modeling, and real-time dashboards that
                   drive better decision-making and competitive advantage.
@@ -97,7 +97,7 @@ export default function FinancialServicesPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   FinTech Innovation & Integration
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Stay competitive with emerging technologies including
                   blockchain, cryptocurrency platforms, robo-advisors, and
                   embedded finance solutions that create new revenue streams.
@@ -109,7 +109,7 @@ export default function FinancialServicesPage() {
       </section>
 
       {/* Relevant Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             Relevant Services
@@ -117,71 +117,71 @@ export default function FinancialServicesPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
               href="/services/business-consulting"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for digital transformation and operational
                 excellence.
               </p>
             </Link>
             <Link
               href="/services/business-process"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline operations and improve efficiency across your
                 organization.
               </p>
             </Link>
             <Link
               href="/services/managed-it"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Comprehensive IT management and support for financial
                 institutions.
               </p>
             </Link>
             <Link
               href="/services/ai"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Deploy intelligent systems for fraud detection and predictive
                 analytics.
               </p>
             </Link>
             <Link
               href="/services/data-analytics"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform financial data into actionable business insights.
               </p>
             </Link>
             <Link
               href="/services/cloud-hybrid"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Secure, compliant cloud solutions for modern financial
                 services.
               </p>

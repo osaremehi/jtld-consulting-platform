@@ -32,18 +32,18 @@ export default function ManufacturingPage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary-900 mb-8">
+          <h2 className="text-3xl font-bold text-primary-900 dark:text-white mb-8">
             How We Help
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Smart Factory & Industry 4.0
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Transform traditional manufacturing into connected smart
                   factories with integrated MES, ERP systems, digital twins, and
                   real-time production monitoring that optimize throughput and
@@ -51,20 +51,20 @@ export default function ManufacturingPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Industrial IoT & Automation
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Deploy sensor networks, edge computing, and automated systems
                   that capture machine data, enable remote monitoring, and drive
                   process improvements across the production floor.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Supply Chain & Logistics Optimization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Optimize end-to-end supply chains with demand-driven planning,
                   supplier collaboration platforms, and logistics management
                   that reduce lead times and improve material availability.
@@ -73,10 +73,10 @@ export default function ManufacturingPage() {
             </div>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Quality Management & Compliance
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Implement comprehensive quality management systems with
                   statistical process control, automated inspection, and
                   traceability that ensure compliance with ISO, FDA, and
@@ -84,10 +84,10 @@ export default function ManufacturingPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Predictive Maintenance & Asset Performance
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Maximize equipment uptime with AI-powered predictive
                   maintenance, condition monitoring, and asset performance
                   management that prevent unplanned downtime and extend asset
@@ -95,10 +95,10 @@ export default function ManufacturingPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Production Planning & Scheduling
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Optimize production schedules with advanced planning systems,
                   capacity optimization, and finite scheduling that balance
                   customer demands with resource constraints and delivery
@@ -111,78 +111,78 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Relevant Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary-900 mb-8">
+          <h2 className="text-3xl font-bold text-primary-900 dark:text-white mb-8">
             Relevant Services
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
               href="/services/business-consulting"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for manufacturing transformation and
                 operational excellence.
               </p>
             </Link>
             <Link
               href="/services/business-process"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline production processes and lean manufacturing
                 initiatives.
               </p>
             </Link>
             <Link
               href="/services/managed-it"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Reliable infrastructure for manufacturing operations and OT/IT
                 convergence.
               </p>
             </Link>
             <Link
               href="/services/ai"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Predictive maintenance and quality control powered by AI.
               </p>
             </Link>
             <Link
               href="/services/data-analytics"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform manufacturing data into operational insights.
               </p>
             </Link>
             <Link
               href="/services/cloud-hybrid"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Secure cloud solutions for modern manufacturing systems.
               </p>
             </Link>

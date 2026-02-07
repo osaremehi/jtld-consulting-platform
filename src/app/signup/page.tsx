@@ -50,21 +50,21 @@ export default function SignUpPage() {
 
   if (success) {
     return (
-      <div className="min-h-[calc(100vh-12rem)] flex items-center justify-center bg-gray-50 px-4">
+      <div className="min-h-[calc(100vh-12rem)] flex items-center justify-center bg-gray-50 dark:bg-gray-800 px-4">
         <div className="max-w-md w-full text-center">
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-10">
-            <div className="w-16 h-16 mx-auto rounded-full bg-green-50 flex items-center justify-center mb-6">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-10">
+            <div className="w-16 h-16 mx-auto rounded-full bg-green-50 dark:bg-green-900/20 flex items-center justify-center mb-6">
               <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-3">Account Created</h1>
-            <p className="text-gray-600 mb-2">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Account Created</h1>
+            <p className="text-gray-600 dark:text-gray-300 mb-2">
               Thank you for signing up, {form.firstName}!
             </p>
-            <p className="text-sm text-gray-500 mb-8">
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-8">
               The JTLD Client Portal is currently under development. We&apos;ll notify you at{" "}
-              <strong className="text-gray-700">{form.email}</strong> when it&apos;s ready.
+              <strong className="text-gray-700 dark:text-gray-200">{form.email}</strong> when it&apos;s ready.
             </p>
             <div className="space-y-3">
               <Link
@@ -75,7 +75,7 @@ export default function SignUpPage() {
               </Link>
               <Link
                 href="/consultation"
-                className="block w-full px-6 py-3 border border-primary-700 text-primary-700 font-semibold rounded-lg hover:bg-primary-50 transition-colors"
+                className="block w-full px-6 py-3 border border-primary-700 dark:border-primary-500 text-primary-700 dark:text-primary-400 font-semibold rounded-lg hover:bg-primary-50 dark:hover:bg-primary-900/30 transition-colors"
               >
                 Book a Consultation
               </Link>
@@ -130,37 +130,37 @@ export default function SignUpPage() {
       </div>
 
       {/* Right panel — form */}
-      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-50 py-12">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800 py-12">
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="lg:hidden text-center mb-8">
             <Link href="/" className="inline-flex items-center gap-2">
               <Image src="/logo.svg" alt="JTLD Consulting" width={40} height={44} />
               <div className="flex flex-col leading-none">
-                <span className="text-lg font-bold tracking-tight text-primary-900">JTLD</span>
-                <span className="text-xs text-gray-500 tracking-widest uppercase">Consulting</span>
+                <span className="text-lg font-bold tracking-tight text-primary-900 dark:text-white">JTLD</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 tracking-widest uppercase">Consulting</span>
               </div>
             </Link>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 sm:p-10">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 sm:p-10">
             <div className="mb-8">
-              <h1 className="text-2xl font-bold text-gray-900 mb-2">Create your account</h1>
-              <p className="text-sm text-gray-600">
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Create your account</h1>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
                 Get started with the JTLD Client Portal.
               </p>
             </div>
 
             {error && (
-              <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-100">
-                <p className="text-sm text-red-700">{error}</p>
+              <div className="mb-6 p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-100 dark:border-red-800">
+                <p className="text-sm text-red-700 dark:text-red-400">{error}</p>
               </div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1.5">
+                  <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                     First Name *
                   </label>
                   <input
@@ -170,11 +170,11 @@ export default function SignUpPage() {
                     onChange={(e) => update("firstName", e.target.value)}
                     required
                     autoComplete="given-name"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
                 <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1.5">
+                  <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                     Last Name *
                   </label>
                   <input
@@ -184,13 +184,13 @@ export default function SignUpPage() {
                     onChange={(e) => update("lastName", e.target.value)}
                     required
                     autoComplete="family-name"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                   Work Email *
                 </label>
                 <input
@@ -201,12 +201,12 @@ export default function SignUpPage() {
                   required
                   autoComplete="email"
                   placeholder="you@company.com"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                   Company
                 </label>
                 <input
@@ -215,12 +215,12 @@ export default function SignUpPage() {
                   value={form.company}
                   onChange={(e) => update("company", e.target.value)}
                   autoComplete="organization"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                   Password *
                 </label>
                 <div className="relative">
@@ -233,12 +233,12 @@ export default function SignUpPage() {
                     minLength={8}
                     autoComplete="new-password"
                     placeholder="Minimum 8 characters"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent pr-12"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent pr-12"
                   />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
                     aria-label={showPassword ? "Hide password" : "Show password"}
                   >
                     {showPassword ? (
@@ -256,7 +256,7 @@ export default function SignUpPage() {
               </div>
 
               <div>
-                <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="confirmPassword" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                   Confirm Password *
                 </label>
                 <input
@@ -268,7 +268,7 @@ export default function SignUpPage() {
                   minLength={8}
                   autoComplete="new-password"
                   placeholder="Re-enter your password"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 />
               </div>
 
@@ -278,15 +278,15 @@ export default function SignUpPage() {
                   type="checkbox"
                   checked={form.agreed}
                   onChange={(e) => update("agreed", e.target.checked)}
-                  className="h-4 w-4 mt-0.5 rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+                  className="h-4 w-4 mt-0.5 rounded border-gray-300 dark:border-gray-600 text-primary-600 focus:ring-primary-500"
                 />
-                <label htmlFor="agreed" className="ml-2 text-sm text-gray-600">
+                <label htmlFor="agreed" className="ml-2 text-sm text-gray-600 dark:text-gray-300">
                   I agree to the{" "}
-                  <Link href="/terms" className="text-primary-600 hover:text-primary-700 font-medium underline">
+                  <Link href="/terms" className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium underline">
                     Terms of Service
                   </Link>{" "}
                   and{" "}
-                  <Link href="/privacy" className="text-primary-600 hover:text-primary-700 font-medium underline">
+                  <Link href="/privacy" className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium underline">
                     Privacy Policy
                   </Link>
                 </label>
@@ -311,19 +311,19 @@ export default function SignUpPage() {
               </button>
             </form>
 
-            <div className="mt-8 pt-6 border-t border-gray-100 text-center">
-              <p className="text-sm text-gray-600">
+            <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700 text-center">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
                 Already have an account?{" "}
-                <Link href="/login" className="font-semibold text-primary-700 hover:text-primary-800">
+                <Link href="/login" className="font-semibold text-primary-700 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300">
                   Log in
                 </Link>
               </p>
             </div>
           </div>
 
-          <p className="mt-6 text-center text-xs text-gray-500">
+          <p className="mt-6 text-center text-xs text-gray-500 dark:text-gray-400">
             Need help?{" "}
-            <Link href="/contact" className="text-primary-600 hover:text-primary-700 font-medium">
+            <Link href="/contact" className="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium">
               Contact support
             </Link>
           </p>

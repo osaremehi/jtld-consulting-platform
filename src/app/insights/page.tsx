@@ -94,15 +94,15 @@ const categories = [
 
 function CategoryBadge({ category }: { category: string }) {
   const colors: Record<string, string> = {
-    "Business Consulting": "bg-blue-50 text-blue-700",
-    "Business Process Services": "bg-violet-50 text-violet-700",
-    "Managed IT Services": "bg-emerald-50 text-emerald-700",
-    "Artificial Intelligence": "bg-amber-50 text-amber-700",
-    "Data Analytics": "bg-cyan-50 text-cyan-700",
-    "Cloud & Hybrid IT": "bg-rose-50 text-rose-700",
+    "Business Consulting": "bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+    "Business Process Services": "bg-violet-50 text-violet-700 dark:bg-violet-900/30 dark:text-violet-400",
+    "Managed IT Services": "bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
+    "Artificial Intelligence": "bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
+    "Data Analytics": "bg-cyan-50 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
+    "Cloud & Hybrid IT": "bg-rose-50 text-rose-700 dark:bg-rose-900/30 dark:text-rose-400",
   };
   return (
-    <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-medium ${colors[category] || "bg-gray-100 text-gray-700"}`}>
+    <span className={`inline-block px-2.5 py-0.5 rounded-full text-xs font-medium ${colors[category] || "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300"}`}>
       {category}
     </span>
   );
@@ -130,7 +130,7 @@ export default function InsightsPage() {
       </section>
 
       {/* Category Filter */}
-      <section className="border-b border-gray-200 bg-white sticky top-[100px] z-30">
+      <section className="border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 sticky top-[100px] z-30">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 overflow-x-auto py-4 no-scrollbar">
             {categories.map((cat) => (
@@ -139,7 +139,7 @@ export default function InsightsPage() {
                 className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   cat === "All"
                     ? "bg-primary-700 text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
                 }`}
               >
                 {cat}
@@ -150,11 +150,11 @@ export default function InsightsPage() {
       </section>
 
       {/* Featured Article */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Link
             href={featured.href}
-            className="group block bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden hover:border-primary-200 hover:shadow-lg transition-all duration-200"
+            className="group block bg-gray-50 dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden hover:border-primary-200 dark:hover:border-primary-700 hover:shadow-lg transition-all duration-200"
           >
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="bg-gradient-to-br from-primary-800 to-primary-900 p-10 lg:p-14 flex items-center">
@@ -171,16 +171,16 @@ export default function InsightsPage() {
               <div className="p-10 lg:p-14 flex flex-col justify-between">
                 <div>
                   <p className="text-xs font-semibold text-accent-600 uppercase tracking-wider mb-2">Featured</p>
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                     {featured.excerpt}
                   </p>
                 </div>
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm font-semibold text-gray-900">{featured.author}</p>
-                    <p className="text-xs text-gray-500">{featured.role}</p>
+                    <p className="text-sm font-semibold text-gray-900 dark:text-white">{featured.author}</p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{featured.role}</p>
                   </div>
-                  <div className="text-xs text-gray-400">
+                  <div className="text-xs text-gray-400 dark:text-gray-500">
                     {featured.date} &middot; {featured.readTime}
                   </div>
                 </div>
@@ -191,28 +191,28 @@ export default function InsightsPage() {
       </section>
 
       {/* Article Grid */}
-      <section className="pb-20 lg:pb-28 bg-white">
+      <section className="pb-20 lg:pb-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article) => (
               <Link
                 key={article.title}
                 href={article.href}
-                className="group flex flex-col bg-gray-50 rounded-xl border border-gray-100 overflow-hidden hover:border-primary-200 hover:shadow-md transition-all duration-200"
+                className="group flex flex-col bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 overflow-hidden hover:border-primary-200 dark:hover:border-primary-700 hover:shadow-md transition-all duration-200"
               >
                 <div className="p-6 flex flex-col flex-1">
                   <div className="mb-3">
                     <CategoryBadge category={article.category} />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary-700 transition-colors">
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-primary-700 transition-colors">
                     {article.title}
                   </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed flex-1">
+                  <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed flex-1">
                     {article.excerpt}
                   </p>
-                  <div className="flex items-center justify-between mt-6 pt-4 border-t border-gray-100">
-                    <p className="text-sm font-medium text-gray-900">{article.author}</p>
-                    <p className="text-xs text-gray-400">
+                  <div className="flex items-center justify-between mt-6 pt-4 border-t border-gray-100 dark:border-gray-700">
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">{article.author}</p>
+                    <p className="text-xs text-gray-400 dark:text-gray-500">
                       {article.date} &middot; {article.readTime}
                     </p>
                   </div>
@@ -224,13 +224,13 @@ export default function InsightsPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-20 lg:py-28 bg-gray-50 border-t border-gray-100">
+      <section className="py-20 lg:py-28 bg-gray-50 dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
               Get Insights Delivered
             </h2>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
               Subscribe to our newsletter for the latest thinking on business strategy,
               technology, and digital transformation.
             </p>
@@ -238,7 +238,7 @@ export default function InsightsPage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               />
               <button
@@ -248,7 +248,7 @@ export default function InsightsPage() {
                 Subscribe
               </button>
             </form>
-            <p className="mt-3 text-xs text-gray-500">
+            <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
               No spam, ever. Unsubscribe at any time.
             </p>
           </div>

@@ -122,11 +122,11 @@ export default function Home() {
       {/* Stats Section */}
       <section className="relative -mt-12 z-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-xl border border-gray-100 grid grid-cols-2 lg:grid-cols-4 divide-x divide-gray-100">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-700 grid grid-cols-2 lg:grid-cols-4 divide-x divide-gray-100 dark:divide-gray-700">
             {stats.map((stat) => (
               <div key={stat.label} className="px-6 py-8 text-center">
-                <p className="text-3xl sm:text-4xl font-bold text-primary-700">{stat.value}</p>
-                <p className="mt-1 text-sm text-gray-500 font-medium">{stat.label}</p>
+                <p className="text-3xl sm:text-4xl font-bold text-primary-700 dark:text-primary-400">{stat.value}</p>
+                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400 font-medium">{stat.label}</p>
               </div>
             ))}
           </div>
@@ -134,16 +134,16 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
               Our Services
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               End-to-End Consulting &amp; Technology Solutions
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-300">
               From strategic advisory to hands-on implementation, we deliver solutions
               that create lasting value for your business.
             </p>
@@ -153,16 +153,16 @@ export default function Home() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group block p-8 bg-gray-50 rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-lg transition-all duration-200"
+                className="group block p-8 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 hover:border-primary-200 dark:hover:border-primary-700 hover:shadow-lg transition-all duration-200"
               >
-                <div className="text-primary-600 mb-4 group-hover:text-primary-700 transition-colors">
+                <div className="text-primary-600 dark:text-primary-400 mb-4 group-hover:text-primary-700 transition-colors">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary-700 transition-colors">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-primary-700 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
-                <span className="inline-flex items-center mt-4 text-sm font-medium text-primary-600 group-hover:text-primary-700">
+                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{service.description}</p>
+                <span className="inline-flex items-center mt-4 text-sm font-medium text-primary-600 dark:text-primary-400 group-hover:text-primary-700">
                   Learn more
                   <svg className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -175,16 +175,16 @@ export default function Home() {
       </section>
 
       {/* Professional Services Section */}
-      <section className="py-20 lg:py-28 bg-primary-50">
+      <section className="py-20 lg:py-28 bg-primary-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
               Professional Services
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Expert Teams, Delivered On Demand
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-300">
               Augment your workforce with vetted professionals who integrate seamlessly
               into your projects and deliver from day one.
             </p>
@@ -221,11 +221,11 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="relative p-8 bg-white rounded-xl border border-primary-100 hover:border-primary-200 hover:shadow-lg transition-all duration-200"
+                className="relative p-8 bg-white dark:bg-gray-700 rounded-xl border border-primary-100 dark:border-primary-800 hover:border-primary-200 dark:hover:border-primary-700 hover:shadow-lg transition-all duration-200"
               >
-                <div className="text-primary-600 mb-4">{item.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-6">{item.description}</p>
+                <div className="text-primary-600 dark:text-primary-400 mb-4">{item.icon}</div>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{item.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">{item.description}</p>
                 <div className="h-32 bg-primary-50 rounded-lg border-2 border-dashed border-primary-200 flex items-center justify-center">
                   <span className="text-sm text-primary-400 font-medium">Coming Soon</span>
                 </div>
@@ -274,18 +274,18 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 bg-gray-50 border-t border-gray-100">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Stay Informed</h2>
-            <p className="text-gray-600 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Stay Informed</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
               Get the latest business insights, industry trends, and consulting perspectives delivered to your inbox.
             </p>
             <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               />
               <button
@@ -295,7 +295,7 @@ export default function Home() {
                 Subscribe
               </button>
             </form>
-            <p className="mt-3 text-xs text-gray-500">
+            <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
               No spam, ever. Unsubscribe at any time.
             </p>
           </div>

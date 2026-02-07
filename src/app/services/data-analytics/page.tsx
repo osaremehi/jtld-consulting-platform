@@ -34,19 +34,19 @@ export default function DataAnalyticsPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">What We Do</h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">What We Do</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
               Most organizations collect more data than they use. We close the gap — from building reliable data infrastructure to delivering the insights and predictions that drive better decisions.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {capabilities.map((cap) => (
-              <div key={cap.title} className="p-6 bg-gray-50 rounded-xl border border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{cap.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{cap.description}</p>
+              <div key={cap.title} className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{cap.title}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{cap.description}</p>
               </div>
             ))}
           </div>

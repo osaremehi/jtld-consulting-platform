@@ -32,7 +32,7 @@ export default function EnergyPage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             How We Help
@@ -43,7 +43,7 @@ export default function EnergyPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Smart Grid Modernization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Transform legacy grid infrastructure with IoT sensors, smart
                   meters, and real-time monitoring systems that improve
                   reliability, enable demand response, and integrate renewable
@@ -54,7 +54,7 @@ export default function EnergyPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Sustainability & ESG Initiatives
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Develop and implement comprehensive sustainability strategies,
                   carbon tracking systems, and ESG reporting frameworks that
                   meet regulatory requirements and stakeholder expectations.
@@ -64,7 +64,7 @@ export default function EnergyPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Enterprise Asset Management
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Optimize the lifecycle management of critical infrastructure
                   assets including generation facilities, transmission lines,
                   and distribution networks through integrated asset performance
@@ -77,7 +77,7 @@ export default function EnergyPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Predictive Maintenance & IoT
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Reduce downtime and maintenance costs with AI-powered
                   predictive analytics that identify equipment failures before
                   they occur, extending asset life and improving operational
@@ -88,7 +88,7 @@ export default function EnergyPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Energy Trading & Market Operations
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Implement advanced trading platforms, forecasting models, and
                   market analytics that optimize energy procurement, hedging
                   strategies, and revenue management in dynamic energy markets.
@@ -98,7 +98,7 @@ export default function EnergyPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Customer Experience & Billing Modernization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Enhance customer engagement with digital portals, mobile apps,
                   and flexible billing systems that support time-of-use rates,
                   distributed energy resources, and personalized energy
@@ -111,7 +111,7 @@ export default function EnergyPage() {
       </section>
 
       {/* Relevant Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             Relevant Services
@@ -119,68 +119,68 @@ export default function EnergyPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
               href="/services/business-consulting"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for energy transition and operational
                 transformation.
               </p>
             </Link>
             <Link
               href="/services/business-process"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline operations from generation to customer service.
               </p>
             </Link>
             <Link
               href="/services/managed-it"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Reliable infrastructure for critical energy operations.
               </p>
             </Link>
             <Link
               href="/services/ai"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Predictive maintenance and energy demand forecasting solutions.
               </p>
             </Link>
             <Link
               href="/services/data-analytics"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform operational data into actionable energy insights.
               </p>
             </Link>
             <Link
               href="/services/cloud-hybrid"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Scalable cloud solutions for modern energy management.
               </p>
             </Link>

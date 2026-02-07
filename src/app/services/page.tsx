@@ -80,7 +80,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services List */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
           {services.map((service, i) => (
             <div
@@ -93,15 +93,15 @@ export default function ServicesPage() {
                 <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
                   {service.tagline}
                 </p>
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-4">
                   {service.title}
                 </h2>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                   {service.description}
                 </p>
                 <Link
                   href={service.href}
-                  className="inline-flex items-center text-sm font-semibold text-primary-700 hover:text-primary-800 transition-colors"
+                  className="inline-flex items-center text-sm font-semibold text-primary-700 dark:text-primary-400 hover:text-primary-800 transition-colors"
                 >
                   Learn more
                   <svg className="ml-1 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -110,13 +110,13 @@ export default function ServicesPage() {
                 </Link>
               </div>
               <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                <div className="bg-gray-50 rounded-xl border border-gray-100 p-8">
-                  <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 p-8">
+                  <h3 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
                     Key Capabilities
                   </h3>
                   <ul className="space-y-3">
                     {service.features.map((feature) => (
-                      <li key={feature} className="flex items-center gap-3 text-gray-700">
+                      <li key={feature} className="flex items-center gap-3 text-gray-700 dark:text-gray-200">
                         <svg className="w-5 h-5 text-primary-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                         </svg>
@@ -132,13 +132,13 @@ export default function ServicesPage() {
       </section>
 
       {/* Client Stories */}
-      <section className="py-20 lg:py-28 bg-gray-50">
+      <section className="py-20 lg:py-28 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
               Client Stories
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Trusted by Leaders Across Industries
             </h2>
           </div>
@@ -162,17 +162,17 @@ export default function ServicesPage() {
             ].map((testimonial) => (
               <div
                 key={testimonial.name}
-                className="bg-white rounded-xl p-8 border border-gray-100"
+                className="bg-white dark:bg-gray-700 rounded-xl p-8 border border-gray-100 dark:border-gray-700"
               >
-                <svg className="w-8 h-8 text-primary-200 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-8 h-8 text-primary-200 dark:text-primary-700 mb-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151C7.563 6.068 6 8.789 6 11h4v10H0z" />
                 </svg>
-                <blockquote className="text-gray-700 mb-6 leading-relaxed">
+                <blockquote className="text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
                   {testimonial.quote}
                 </blockquote>
                 <div>
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.title}</p>
+                  <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.title}</p>
                 </div>
               </div>
             ))}

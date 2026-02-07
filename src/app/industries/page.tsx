@@ -64,20 +64,20 @@ export default function IndustriesPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {industries.map((industry) => (
               <Link
                 key={industry.name}
                 href={industry.href}
-                className="group block p-8 bg-gray-50 rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-lg transition-all duration-200"
+                className="group block p-8 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 hover:border-primary-200 dark:hover:border-primary-700 hover:shadow-lg transition-all duration-200"
               >
-                <h2 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-700 transition-colors">
+                <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-700 transition-colors">
                   {industry.name}
                 </h2>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{industry.description}</p>
-                <span className="inline-flex items-center text-sm font-medium text-primary-600 group-hover:text-primary-700">
+                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4">{industry.description}</p>
+                <span className="inline-flex items-center text-sm font-medium text-primary-600 dark:text-primary-400 group-hover:text-primary-700">
                   Learn more
                   <svg className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

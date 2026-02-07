@@ -32,7 +32,7 @@ export default function HealthcarePage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             How We Help
@@ -43,7 +43,7 @@ export default function HealthcarePage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Patient Data Management & Security
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Implement secure, integrated patient data platforms that
                   enable seamless information sharing across care teams while
                   maintaining the highest standards of data privacy and
@@ -54,7 +54,7 @@ export default function HealthcarePage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   HIPAA Compliance & Regulatory Support
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Ensure full compliance with HIPAA, HITECH, and other
                   healthcare regulations through comprehensive audits, risk
                   assessments, and implementation of best-practice security
@@ -65,7 +65,7 @@ export default function HealthcarePage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Clinical Analytics & Population Health
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Leverage advanced analytics to improve patient outcomes,
                   identify at-risk populations, optimize treatment protocols,
                   and drive evidence-based clinical decision-making.
@@ -77,7 +77,7 @@ export default function HealthcarePage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Telehealth & Remote Care Solutions
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Deploy scalable telehealth platforms that expand access to
                   care, improve patient engagement, and enable remote
                   monitoring for chronic disease management and virtual
@@ -88,7 +88,7 @@ export default function HealthcarePage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   EHR Optimization & Interoperability
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Maximize the value of your electronic health record
                   investments through workflow optimization, system integration,
                   and implementation of FHIR standards for seamless data
@@ -99,7 +99,7 @@ export default function HealthcarePage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Life Sciences R&D & Clinical Trials
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Accelerate drug discovery and clinical trial processes with
                   AI-powered analytics, digital trial platforms, and data
                   management solutions that improve efficiency and regulatory
@@ -125,7 +125,7 @@ export default function HealthcarePage() {
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for healthcare transformation and value-based
                 care.
               </p>
@@ -137,7 +137,7 @@ export default function HealthcarePage() {
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline clinical workflows and administrative operations.
               </p>
             </Link>
@@ -148,7 +148,7 @@ export default function HealthcarePage() {
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Reliable IT infrastructure for healthcare delivery
                 organizations.
               </p>
@@ -160,7 +160,7 @@ export default function HealthcarePage() {
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Intelligent solutions for diagnostics, drug discovery, and
                 clinical insights.
               </p>
@@ -172,7 +172,7 @@ export default function HealthcarePage() {
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform healthcare data into actionable clinical and
                 operational insights.
               </p>
@@ -184,7 +184,7 @@ export default function HealthcarePage() {
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 HIPAA-compliant cloud solutions for modern healthcare delivery.
               </p>
             </Link>

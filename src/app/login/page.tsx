@@ -66,7 +66,7 @@ export default function LoginPage() {
       </div>
 
       {/* Right panel — form */}
-      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <div className="flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="lg:hidden text-center mb-8">
@@ -74,28 +74,28 @@ export default function LoginPage() {
               <Image src="/logo.svg" alt="JTLD Consulting" width={40} height={44} />
               <div className="flex flex-col leading-none">
                 <span className="text-lg font-bold tracking-tight text-primary-900">JTLD</span>
-                <span className="text-xs text-gray-500 tracking-widest uppercase">Consulting</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 tracking-widest uppercase">Consulting</span>
               </div>
             </Link>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 sm:p-10">
+          <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-8 sm:p-10">
             <div className="mb-8">
-              <h1 className="text-2xl font-bold text-gray-900 mb-2">Log in to your account</h1>
-              <p className="text-sm text-gray-600">
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Log in to your account</h1>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
                 Access the JTLD Client Portal to manage your engagements.
               </p>
             </div>
 
             {error && (
-              <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-100">
-                <p className="text-sm text-red-700">{error}</p>
+              <div className="mb-6 p-4 rounded-lg bg-red-50 border border-red-100 dark:bg-red-900/20 dark:border-red-800">
+                <p className="text-sm text-red-700 dark:text-red-400">{error}</p>
               </div>
             )}
 
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                   Email Address
                 </label>
                 <input
@@ -106,18 +106,18 @@ export default function LoginPage() {
                   required
                   autoComplete="email"
                   placeholder="you@company.com"
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                 />
               </div>
 
               <div>
                 <div className="flex items-center justify-between mb-1.5">
-                  <label htmlFor="password" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-200">
                     Password
                   </label>
                   <Link
                     href="/login"
-                    className="text-xs text-primary-600 hover:text-primary-700 font-medium"
+                    className="text-xs text-primary-600 hover:text-primary-700 font-medium dark:text-primary-400"
                   >
                     Forgot password?
                   </Link>
@@ -131,12 +131,12 @@ export default function LoginPage() {
                     required
                     autoComplete="current-password"
                     placeholder="Enter your password"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent pr-12"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent pr-12 dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                   />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300"
                     aria-label={showPassword ? "Hide password" : "Show password"}
                   >
                     {showPassword ? (
@@ -157,9 +157,9 @@ export default function LoginPage() {
                 <input
                   id="remember"
                   type="checkbox"
-                  className="h-4 w-4 rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+                  className="h-4 w-4 rounded border-gray-300 text-primary-600 focus:ring-primary-500 dark:border-gray-600"
                 />
-                <label htmlFor="remember" className="ml-2 text-sm text-gray-600">
+                <label htmlFor="remember" className="ml-2 text-sm text-gray-600 dark:text-gray-300">
                   Remember me
                 </label>
               </div>
@@ -183,19 +183,19 @@ export default function LoginPage() {
               </button>
             </form>
 
-            <div className="mt-8 pt-6 border-t border-gray-100 text-center">
-              <p className="text-sm text-gray-600">
+            <div className="mt-8 pt-6 border-t border-gray-100 dark:border-gray-700 text-center">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
                 Don&apos;t have an account?{" "}
-                <Link href="/signup" className="font-semibold text-primary-700 hover:text-primary-800">
+                <Link href="/signup" className="font-semibold text-primary-700 hover:text-primary-800 dark:text-primary-400">
                   Sign up
                 </Link>
               </p>
             </div>
           </div>
 
-          <p className="mt-6 text-center text-xs text-gray-500">
+          <p className="mt-6 text-center text-xs text-gray-500 dark:text-gray-400">
             Need help?{" "}
-            <Link href="/contact" className="text-primary-600 hover:text-primary-700 font-medium">
+            <Link href="/contact" className="text-primary-600 hover:text-primary-700 font-medium dark:text-primary-400">
               Contact support
             </Link>
           </p>

@@ -132,16 +132,16 @@ export default function CareersPage() {
       </section>
 
       {/* Why Join */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
               Why Join Us
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               More Than a Job — A Career You&apos;ll Love
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-300">
               We invest in our people because they&apos;re the reason our clients keep coming back.
             </p>
           </div>
@@ -149,13 +149,13 @@ export default function CareersPage() {
             {perks.map((perk) => (
               <div
                 key={perk.title}
-                className="p-6 bg-gray-50 rounded-xl border border-gray-100"
+                className="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700"
               >
-                <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center text-primary-600 mb-4">
+                <div className="w-12 h-12 bg-primary-50 dark:bg-primary-900/30 rounded-xl flex items-center justify-center text-primary-600 dark:text-primary-400 mb-4">
                   {perk.icon}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{perk.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{perk.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{perk.title}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{perk.description}</p>
               </div>
             ))}
           </div>
@@ -163,16 +163,16 @@ export default function CareersPage() {
       </section>
 
       {/* Open Positions */}
-      <section className="py-20 lg:py-28 bg-gray-50">
+      <section className="py-20 lg:py-28 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
               Open Positions
             </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Find Your Next Role
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 dark:text-gray-300">
               We&apos;re growing across all practices. See what&apos;s available and apply today.
             </p>
           </div>
@@ -181,7 +181,7 @@ export default function CareersPage() {
               <Link
                 key={job.title}
                 href={job.href}
-                className="group block bg-white rounded-xl border border-gray-100 p-6 hover:border-primary-200 hover:shadow-md transition-all duration-200"
+                className="group block bg-white dark:bg-gray-700 rounded-xl border border-gray-100 dark:border-gray-700 p-6 hover:border-primary-200 dark:hover:border-primary-700 hover:shadow-md transition-all duration-200"
               >
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                   <div>

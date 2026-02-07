@@ -32,18 +32,18 @@ export default function RetailPage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary-900 mb-8">
+          <h2 className="text-3xl font-bold text-primary-900 dark:text-white mb-8">
             How We Help
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Omnichannel Commerce Excellence
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Create seamless shopping experiences across web, mobile, and
                   physical stores with unified commerce platforms that enable
                   buy online pickup in-store, endless aisle, and consistent
@@ -51,10 +51,10 @@ export default function RetailPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Supply Chain Optimization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Transform supply chain operations with real-time visibility,
                   demand forecasting, and intelligent inventory management that
                   reduce stockouts, minimize waste, and improve fulfillment
@@ -62,10 +62,10 @@ export default function RetailPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Customer Analytics & Insights
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Unlock deep customer understanding through advanced analytics,
                   behavioral tracking, and predictive modeling that inform
                   merchandising, marketing, and strategic decisions.
@@ -74,10 +74,10 @@ export default function RetailPage() {
             </div>
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Personalization & Customer Engagement
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Deliver tailored experiences with AI-powered recommendation
                   engines, dynamic pricing, personalized marketing, and loyalty
                   programs that increase conversion rates and customer lifetime
@@ -85,10 +85,10 @@ export default function RetailPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Inventory & Demand Planning
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Optimize inventory across channels with machine learning
                   forecasting, automated replenishment, and allocation
                   strategies that balance availability with working capital
@@ -96,10 +96,10 @@ export default function RetailPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-primary-900 mb-2">
+                <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                   Store Operations & POS Modernization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Modernize in-store operations with cloud-based POS systems,
                   mobile checkout, clienteling tools, and store analytics that
                   empower associates and enhance the physical retail experience.
@@ -111,75 +111,75 @@ export default function RetailPage() {
       </section>
 
       {/* Relevant Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-primary-900 mb-8">
+          <h2 className="text-3xl font-bold text-primary-900 dark:text-white mb-8">
             Relevant Services
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
               href="/services/business-consulting"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for retail transformation and growth.
               </p>
             </Link>
             <Link
               href="/services/business-process"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline operations from procurement to fulfillment.
               </p>
             </Link>
             <Link
               href="/services/managed-it"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Reliable infrastructure for 24/7 retail operations.
               </p>
             </Link>
             <Link
               href="/services/ai"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Personalization and demand forecasting powered by AI.
               </p>
             </Link>
             <Link
               href="/services/data-analytics"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform customer and operational data into retail insights.
               </p>
             </Link>
             <Link
               href="/services/cloud-hybrid"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
-              <h3 className="text-xl font-semibold text-primary-900 mb-2">
+              <h3 className="text-xl font-semibold text-primary-900 dark:text-white mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Scalable cloud solutions for modern retail commerce.
               </p>
             </Link>

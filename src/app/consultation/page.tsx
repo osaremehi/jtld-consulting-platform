@@ -75,17 +75,17 @@ export default function ConsultationPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-16 bg-gray-50 border-b border-gray-100">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-12">How It Works</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-12">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step, i) => (
               <div key={step.number} className="relative flex flex-col items-center text-center">
                 <div className="w-14 h-14 rounded-full bg-primary-700 text-white flex items-center justify-center text-lg font-bold mb-4">
                   {step.number}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed max-w-xs">{step.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{step.title}</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed max-w-xs">{step.description}</p>
                 {i < steps.length - 1 && (
                   <svg className="hidden md:block absolute top-7 left-[calc(50%+3.5rem)] w-[calc(100%-7rem)] h-0.5 text-primary-200" aria-hidden="true">
                     <line x1="0" y1="1" x2="100%" y2="1" stroke="currentColor" strokeWidth="2" strokeDasharray="6 4" />
@@ -98,19 +98,19 @@ export default function ConsultationPage() {
       </section>
 
       {/* Form + Sidebar */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
             {/* Form */}
             <div className="lg:col-span-3">
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Request Your Consultation</h2>
-              <p className="text-gray-600 mb-8">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Request Your Consultation</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-8">
                 We&apos;ll respond within one business day to schedule your discovery call.
               </p>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1.5">
+                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                       First Name *
                     </label>
                     <input
@@ -118,11 +118,11 @@ export default function ConsultationPage() {
                       id="firstName"
                       name="firstName"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                     />
                   </div>
                   <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1.5">
+                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                       Last Name *
                     </label>
                     <input
@@ -130,14 +130,14 @@ export default function ConsultationPage() {
                       id="lastName"
                       name="lastName"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                       Work Email *
                     </label>
                     <input
@@ -145,25 +145,25 @@ export default function ConsultationPage() {
                       id="email"
                       name="email"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1.5">
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                       Phone
                     </label>
                     <input
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                     />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1.5">
+                    <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                       Company *
                     </label>
                     <input
@@ -171,31 +171,31 @@ export default function ConsultationPage() {
                       id="company"
                       name="company"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                     />
                   </div>
                   <div>
-                    <label htmlFor="jobTitle" className="block text-sm font-medium text-gray-700 mb-1.5">
+                    <label htmlFor="jobTitle" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                       Job Title
                     </label>
                     <input
                       type="text"
                       id="jobTitle"
                       name="jobTitle"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1.5">
+                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                     What Service Are You Interested In? *
                   </label>
                   <select
                     id="service"
                     name="service"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white"
                     defaultValue=""
                   >
                     <option value="" disabled>Select a service</option>
@@ -206,7 +206,7 @@ export default function ConsultationPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="challenge" className="block text-sm font-medium text-gray-700 mb-1.5">
+                  <label htmlFor="challenge" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                     Describe Your Challenge *
                   </label>
                   <textarea
@@ -215,18 +215,18 @@ export default function ConsultationPage() {
                     rows={5}
                     required
                     placeholder="What business problem are you trying to solve? What does success look like?"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-y"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent resize-y dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-500"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 mb-1.5">
+                  <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1.5">
                     Timeline
                   </label>
                   <select
                     id="timeline"
                     name="timeline"
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent dark:bg-gray-800 dark:border-gray-600 dark:text-white"
                     defaultValue=""
                   >
                     <option value="" disabled>When do you need to get started?</option>
@@ -243,9 +243,9 @@ export default function ConsultationPage() {
                 >
                   Request a Consultation
                 </button>
-                <p className="text-xs text-gray-500">
+                <p className="text-xs text-gray-500 dark:text-gray-400">
                   By submitting this form you agree to our{" "}
-                  <Link href="/privacy" className="text-primary-600 hover:text-primary-700 underline">Privacy Policy</Link>.
+                  <Link href="/privacy" className="text-primary-600 dark:text-primary-400 hover:text-primary-700 underline">Privacy Policy</Link>.
                   We&apos;ll never share your information with third parties.
                 </p>
               </form>
@@ -254,7 +254,7 @@ export default function ConsultationPage() {
             {/* Sidebar */}
             <div className="lg:col-span-2 space-y-10">
               <div>
-                <h3 className="text-lg font-bold text-gray-900 mb-6">Why Book a Consultation?</h3>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-6">Why Book a Consultation?</h3>
                 <div className="space-y-6">
                   {reasons.map((reason) => (
                     <div key={reason.title} className="flex gap-4">
@@ -264,22 +264,22 @@ export default function ConsultationPage() {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="text-sm font-semibold text-gray-900 mb-1">{reason.title}</h4>
-                        <p className="text-sm text-gray-600 leading-relaxed">{reason.description}</p>
+                        <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-1">{reason.title}</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{reason.description}</p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-primary-50 rounded-xl p-6 border border-primary-100">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Prefer to Talk Now?</h3>
-                <p className="text-sm text-gray-600 mb-4">
+              <div className="bg-primary-50 rounded-xl p-6 border border-primary-100 dark:bg-primary-900/30 dark:border-primary-800">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Prefer to Talk Now?</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                   Call us directly and we&apos;ll connect you with a consultant.
                 </p>
                 <a
                   href="tel:+14165551234"
-                  className="flex items-center gap-3 text-primary-700 font-semibold hover:text-primary-800 transition-colors"
+                  className="flex items-center gap-3 text-primary-700 dark:text-primary-400 font-semibold hover:text-primary-800 transition-colors"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
@@ -288,7 +288,7 @@ export default function ConsultationPage() {
                 </a>
                 <a
                   href="mailto:consult@jtldinc.com"
-                  className="flex items-center gap-3 text-primary-700 font-semibold hover:text-primary-800 transition-colors mt-3"
+                  className="flex items-center gap-3 text-primary-700 dark:text-primary-400 font-semibold hover:text-primary-800 transition-colors mt-3"
                 >
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />

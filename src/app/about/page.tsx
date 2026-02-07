@@ -106,17 +106,17 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <p className="text-sm font-semibold text-accent-600 uppercase tracking-wider mb-2">
                 Our Story
               </p>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6">
                 From Local Roots to National Impact
               </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                 <p>
                   Founded in 2015 in Toronto, JTLD Consulting started with a simple belief: businesses
                   deserve consulting partners who don&apos;t just diagnose problems — they stay to solve them.
@@ -136,15 +136,15 @@ export default function AboutPage() {
 
             {/* Timeline */}
             <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-px bg-primary-100" />
+              <div className="absolute left-4 top-0 bottom-0 w-px bg-primary-100 dark:bg-primary-800" />
               <div className="space-y-8">
                 {milestones.map((milestone) => (
                   <div key={milestone.year} className="relative pl-12">
-                    <div className="absolute left-0 top-1 w-8 h-8 rounded-full bg-primary-50 border-2 border-primary-300 flex items-center justify-center">
+                    <div className="absolute left-0 top-1 w-8 h-8 rounded-full bg-primary-50 dark:bg-primary-900/30 border-2 border-primary-300 dark:border-primary-600 flex items-center justify-center">
                       <div className="w-2.5 h-2.5 rounded-full bg-primary-600" />
                     </div>
-                    <p className="text-sm font-bold text-primary-700">{milestone.year}</p>
-                    <p className="text-gray-600">{milestone.event}</p>
+                    <p className="text-sm font-bold text-primary-700 dark:text-primary-400">{milestone.year}</p>
+                    <p className="text-gray-600 dark:text-gray-300">{milestone.event}</p>
                   </div>
                 ))}
               </div>
@@ -154,23 +154,23 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 lg:py-28 bg-gray-50">
+      <section className="py-20 lg:py-28 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-white rounded-2xl p-10 border border-gray-100 shadow-sm">
-              <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
-                <svg className="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <div className="bg-white dark:bg-gray-700 rounded-2xl p-10 border border-gray-100 dark:border-gray-700 shadow-sm">
+              <div className="w-12 h-12 bg-primary-50 dark:bg-primary-900/30 rounded-xl flex items-center justify-center mb-6">
+                <svg className="w-6 h-6 text-primary-600 dark:text-primary-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 To empower organizations with the strategic insight, operational excellence, and
                 technology capabilities they need to thrive in an increasingly complex and
                 competitive landscape.
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-10 border border-gray-100 shadow-sm">
+            <div className="bg-white dark:bg-gray-700 rounded-2xl p-10 border border-gray-100 dark:border-gray-700 shadow-sm">
               <div className="w-12 h-12 bg-accent-50 rounded-xl flex items-center justify-center mb-6">
                 <svg className="w-6 h-6 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />

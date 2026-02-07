@@ -32,7 +32,7 @@ export default function EducationPage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             How We Help
@@ -43,7 +43,7 @@ export default function EducationPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Digital Learning & LMS Modernization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Transform educational delivery with modern learning management
                   systems, virtual classrooms, and blended learning environments
                   that support diverse learning modalities and improve student
@@ -54,7 +54,7 @@ export default function EducationPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Student Analytics & Success Platforms
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Leverage predictive analytics to identify at-risk students,
                   personalize interventions, track progress, and improve
                   retention and graduation rates through data-driven insights.
@@ -64,7 +64,7 @@ export default function EducationPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Enrollment Management & CRM
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Optimize student recruitment and enrollment with integrated
                   CRM systems, marketing automation, and application management
                   platforms that streamline the student journey from inquiry to
@@ -77,7 +77,7 @@ export default function EducationPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Institutional Efficiency & ERP
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Modernize administrative operations with integrated ERP
                   systems that streamline finance, HR, student information,
                   and campus operations while reducing costs and improving
@@ -88,7 +88,7 @@ export default function EducationPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   EdTech Platform Development
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Build scalable EdTech solutions including adaptive learning
                   platforms, assessment tools, and educational apps that deliver
                   personalized learning experiences and measurable outcomes.
@@ -98,7 +98,7 @@ export default function EducationPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Campus IT Infrastructure & Security
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Deploy secure, high-performance campus networks, cloud
                   infrastructure, and cybersecurity solutions that support
                   digital learning, research computing, and protect sensitive
@@ -111,7 +111,7 @@ export default function EducationPage() {
       </section>
 
       {/* Relevant Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             Relevant Services
@@ -119,70 +119,70 @@ export default function EducationPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
               href="/services/business-consulting"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for educational transformation and
                 innovation.
               </p>
             </Link>
             <Link
               href="/services/business-process"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline academic and administrative operations.
               </p>
             </Link>
             <Link
               href="/services/managed-it"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Reliable campus IT infrastructure and support services.
               </p>
             </Link>
             <Link
               href="/services/ai"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Personalized learning and student success analytics powered by
                 AI.
               </p>
             </Link>
             <Link
               href="/services/data-analytics"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform educational data into actionable insights for student
                 success.
               </p>
             </Link>
             <Link
               href="/services/cloud-hybrid"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Scalable cloud solutions for modern educational institutions.
               </p>
             </Link>

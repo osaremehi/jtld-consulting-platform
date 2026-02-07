@@ -31,7 +31,7 @@ export default function GovernmentPage() {
       </section>
 
       {/* How We Help Section */}
-      <section className="bg-white py-16">
+      <section className="bg-white dark:bg-gray-900 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             How We Help
@@ -42,7 +42,7 @@ export default function GovernmentPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Digital Government Services
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Transform citizen-facing services with modern web portals,
                   mobile apps, and self-service platforms that make government
                   more accessible, transparent, and responsive to community
@@ -53,7 +53,7 @@ export default function GovernmentPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Citizen Experience Enhancement
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Design and implement user-centric service delivery models that
                   reduce wait times, simplify processes, and improve
                   satisfaction across all touchpoints from permits to social
@@ -64,7 +64,7 @@ export default function GovernmentPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Procurement & Contract Management
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Modernize procurement processes with e-procurement platforms,
                   vendor management systems, and contract lifecycle management
                   that ensure compliance, transparency, and value for taxpayers.
@@ -76,7 +76,7 @@ export default function GovernmentPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Legacy System Modernization
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Migrate mission-critical systems from aging infrastructure to
                   modern, secure platforms that reduce maintenance costs,
                   improve performance, and enable innovation while maintaining
@@ -87,7 +87,7 @@ export default function GovernmentPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Secure Data Sharing & Interoperability
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Enable seamless, secure data exchange between agencies and
                   levels of government through API-first architectures, identity
                   management, and compliance with privacy and security
@@ -98,7 +98,7 @@ export default function GovernmentPage() {
                 <h3 className="text-xl font-semibold text-primary-900 mb-2">
                   Cybersecurity & Compliance
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-gray-700 dark:text-gray-200">
                   Protect sensitive government data and infrastructure with
                   comprehensive security frameworks, threat detection, incident
                   response, and compliance with FedRAMP, NIST, and other
@@ -111,7 +111,7 @@ export default function GovernmentPage() {
       </section>
 
       {/* Relevant Services Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 dark:bg-gray-800 py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary-900 mb-8">
             Relevant Services
@@ -119,68 +119,68 @@ export default function GovernmentPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Link
               href="/services/business-consulting"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Consulting
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Strategic guidance for digital government transformation.
               </p>
             </Link>
             <Link
               href="/services/business-process"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Business Process Optimization
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Streamline government operations and service delivery.
               </p>
             </Link>
             <Link
               href="/services/managed-it"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Managed IT Services
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Reliable IT infrastructure for mission-critical government
                 services.
               </p>
             </Link>
             <Link
               href="/services/ai"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 AI & Machine Learning
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Intelligent automation for improved government efficiency.
               </p>
             </Link>
             <Link
               href="/services/data-analytics"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Data & Analytics
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Transform government data into actionable policy insights.
               </p>
             </Link>
             <Link
               href="/services/cloud-hybrid"
-              className="block p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+              className="block p-6 bg-white dark:bg-gray-700 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-primary-900 mb-2">
                 Cloud & Hybrid Infrastructure
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 dark:text-gray-200">
                 Secure, compliant cloud solutions for government agencies.
               </p>
             </Link>
